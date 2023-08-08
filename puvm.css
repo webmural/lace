@@ -4,7 +4,6 @@
 /* play. */
 
 .pastel {
-  --tape-bluv: plum;
   --tape-luvu: turquoise;
   --tape-play: violet;
 }
@@ -42,10 +41,10 @@
 
 :root {
   --tape-remix: conic-gradient(
-    var(--tape-play),
-    var(--tape-watt),
-    var(--tape-watt),
-    var(--tape-play)
+    hotpink,
+    darkviolet,
+    darkviolet,
+    hotpink
   );
 }
 
@@ -70,7 +69,7 @@ html {
 }
 
 body {
-  margin: 3vh auto;
+  margin: 10vh auto;
   overflow-wrap: anywhere;
 }
 
@@ -80,7 +79,7 @@ p {
 }
 
 article {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
   flex-flow: column wrap;
   padding: 1rem 20vw;
@@ -89,13 +88,19 @@ article {
 
 a {
   display: inline-flex;
-  border-radius: 1em;
+  border-radius: 100%;
   padding: calc(1ex / 3);
+}
+
+a {
+  box-shadow:
+    1vw -1vh 1ch 0 var(--tape-bluv),
+    -1vw -1vh 0 1ch var(--tape-loud);
 }
 
 samp,
 mark {
-  border-radius: 1em;
+  border-radius: 100%;
   padding: calc(2ex / 3);
   font-family: sans-serif;
 }
